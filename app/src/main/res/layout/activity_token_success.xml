@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/gradient_bg"
+    tools:context=".TokenSuccessActivity"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/congratsImage"
+        android:layout_width="203dp"
+        android:layout_height="203dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="Congrats Image"
+        app:srcCompat="@drawable/token34"
+        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/successTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/successMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:text="Your token has been generated successfully!"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/cancel_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Cancel Token"
+    android:textAllCaps="false"
+    android:textSize="18sp"
+    android:backgroundTint="@color/teal_700"
+    android:textColor="@android:color/white"
+    android:minHeight="54dp"
+    android:elevation="8dp"
+    app:cornerRadius="16dp"
+    style="@style/Widget.MaterialComponents.Button"
+    tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    
+</LinearLayout>

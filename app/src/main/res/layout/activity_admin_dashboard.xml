@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@drawable/gradient_bg"
+    tools:context=".AdminDashboardActivity">
+
+    <!-- Header Title -->
+    <TextView
+        android:id="@+id/dashboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Admin Dashboard"
+        android:textColor="#1A237E"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- Token Info Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#4A148C"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:contentPadding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/placeNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place:"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/currentTokenText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Current Token:"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/nextTokenText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Next Token:"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <Spinner
+        android:id="@+id/pendingTokenSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/markDoneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@android:color/transparent"
+        android:minHeight="48dp"
+        android:text="Mark as Done"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        app:cornerRadius="30dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextTokenBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@android:color/transparent"
+        android:minHeight="48dp"
+        android:text="Next Token"
+        android:textColor="#3E2723"
+        android:textSize="18sp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <!-- Floating Reset Button (FAB) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/resetTokenFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+
+        android:layout_marginTop="200dp"
+        android:contentDescription="Go to Reset Token"
+        android:src="@drawable/ic_arrow_right_white"
+        app:backgroundTint="@color/teal_700"
+        app:tint="@android:color/white"
+        tools:ignore="HardcodedText,ClassNameCheck,TouchTargetSizeCheck" />
+
+
+</LinearLayout>

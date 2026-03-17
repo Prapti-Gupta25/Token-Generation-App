@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Digital Token Generation App</string>
+
+    <!-- User Login Strings -->
+    <string name="user_login">User Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register_here">Don\'t have an account? Register here</string>
+
+    <!-- Admin Login Strings -->
+    <string name="admin_login">Admin Login</string>
+    <string name="admin_email">Admin Email</string>
+    <string name="login_as_admin">Login as Admin</string>
+    <string name="back">Back</string>
+    <string name="register_admin_prompt">Don\'t have an admin account? Register here</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="select_place">Select Place</string>
+
+
+    <!-- Admin Registration Strings -->
+    <string name="admin_registration">Admin Registration</string>
+    <string name="full_name">Full Name</string>
+    <string name="register_admin">Register Admin</string>
+</resources>

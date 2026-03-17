@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_bg"
+    android:padding="24dp">
+
+    <!-- Image View -->
+
+
+    <!-- App Title -->
+
+    <ImageView
+        android:id="@+id/tokenicon"
+        android:layout_width="320dp"
+        android:layout_height="152dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="home_screen"
+        app:srcCompat="@drawable/tt"
+        android:alpha="0.65"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="TokenGen"
+        android:textColor="#452268"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Skip the queue, save your time!"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <!-- User Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/userBtn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Continue as User"
+        android:textSize="18sp"
+        android:elevation="6dp"
+        app:cornerRadius="50dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+
+    <!-- Admin Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/adminBtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue as Admin"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
+        app:cornerRadius="32dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize,TextContrastCheck" />
+
+</LinearLayout>

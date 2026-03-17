@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nameInput" type="id" />
+    <item name="registerBtn" type="id" />
+    <item name="placeNameText" type="id" />
+    <item name="tokenDisplay" type="id" />
+    <item name="generateTokenBtn" type="id" />
+    <item name="placeSpinner" type="id" />
+    <item name="successTitle" type="id" />
+    <item name="congratsImage" type="id" />
+    <item name="successMessage" type="id" />
+    <item name="tokenText" type="id" />
+    <item name="statusText" type="id" />
+    <item name="timeText" type="id" />
+    <item name="doneBtn" type="id" />
+    <item name="tokenListRecycler" type="id" />
+    <item name="adminEmail" type="id" />
+    <item name="adminPassword" type="id" />
+    <item name="rootLayout" type="id" />
+</resources>

@@ -69,7 +69,7 @@ Please add your own Firebase configuration before running the project.
 * Real-time token tracking
 * Notification system
 * Cloud-based queue synchronization
-* Analytics dashboard
+* Analytics dashboard and modern UI
 
 ---
 
